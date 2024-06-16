@@ -9,8 +9,8 @@ import Steps from "../components/Steps.astro";
       <span
         class="bg-[#25292E] border border-[#434957] px-4 py-2 text-sm rounded-md"
       >
-       Developer-First Platform as a Service
-    </span>
+        Developer-First Platform as a Service
+      </span>
       <div class="mt-8">
         <h1 class="text-[#F7E9FF]">
           Deploy your Astro Site <span class="text-gradient block"
@@ -18,38 +18,54 @@ import Steps from "../components/Steps.astro";
           >
         </h1>
         <p class="mx-auto text-2xl">
-          A Static Astro example for Zerops which you can deploy in 2 simple steps
-          (Technically, we don't count Ctrl + V... but who's checking?). <span
-            class="block"
-            >Scroll down to learn how to deploy.
-          </span>
+          Astro SSG (Static) example running on Zerops.
+          <span class="block"
+            >Deploy and test yourself with a single click.</span
+          >
         </p>
-        <div class="mt-10 space-x-7">
-          <a
-            href="https://discord.gg/5ptAqtpyvh"
-            target="_blank"
-            class="primarybutton rounded-full text-xl">Discord Community</a
-          >
-          <a
-            href="https://docs.zerops.io/"
-            target="_blank"
-            class="secondarybutton rounded-full text-xl">Zerops Docs</a
-          >
-        </div>
       </div>
     </div>
 
-    <div class="mt-16">
-      <hr class="border border-[#202227] my-4 max-w-[80%] mx-auto" />
-      <h2 class="text-center pt-4">Instructions</h2>
+    <div class="mt-6">
+      <div class="flex justify-center">
+        <a
+          href="https://app.zerops.io/recipe/astro"
+          target="_blank"
+          class="text-lg"
+        >
+          <span
+            class="deploybutton rounded-full flex flex-row items-center justify-center space-x-4 hover:-translate-y-1 duration-300"
+          >
+            <span>Deploy on Zerops</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              enable-background="new 0 0 24 24"
+              height="22px"
+              viewBox="0 0 24 24"
+              width="24px"
+              fill="#292929"
+              ><g><rect fill="none" height="24" width="24"></rect></g><g
+                ><g
+                  ><path
+                    d="M6,15c-0.83,0-1.58,0.34-2.12,0.88C2.7,17.06,2,22,2,22s4.94-0.7,6.12-1.88C8.66,19.58,9,18.83,9,18C9,16.34,7.66,15,6,15 z M6.71,18.71c-0.28,0.28-2.17,0.76-2.17,0.76s0.47-1.88,0.76-2.17C5.47,17.11,5.72,17,6,17c0.55,0,1,0.45,1,1 C7,18.28,6.89,18.53,6.71,18.71z M17.42,13.65L17.42,13.65c6.36-6.36,4.24-11.31,4.24-11.31s-4.95-2.12-11.31,4.24l-2.49-0.5 C7.21,5.95,6.53,6.16,6.05,6.63L2,10.69l5,2.14L11.17,17l2.14,5l4.05-4.05c0.47-0.47,0.68-1.15,0.55-1.81L17.42,13.65z M7.41,10.83L5.5,10.01l1.97-1.97l1.44,0.29C8.34,9.16,7.83,10.03,7.41,10.83z M13.99,18.5l-0.82-1.91 c0.8-0.42,1.67-0.93,2.49-1.5l0.29,1.44L13.99,18.5z M16,12.24c-1.32,1.32-3.38,2.4-4.04,2.73l-2.93-2.93 c0.32-0.65,1.4-2.71,2.73-4.04c4.68-4.68,8.23-3.99,8.23-3.99S20.68,7.56,16,12.24z M15,11c1.1,0,2-0.9,2-2s-0.9-2-2-2s-2,0.9-2,2 S13.9,11,15,11z"
+                  ></path></g
+                ></g
+              ></svg
+            >
+          </span>
+        </a>
+      </div>
+
+      <p class="text-center mx-auto pb-6 pt-24">
+        Deploying will import the following structure
+        (zerops-project-import.yml) <br />and use following (zerops.yml)
+        instructions to build and deploy your app:
+      </p>
       <Steps />
     </div>
-    <p class="text-center text-sm mt-16">
-      Powered by <a
-        href="https://zerops.io"
-        target="_blank"
-        class="font-semibold">Zerops</a
-      >
+    <p class="text-center mt-16">
+      Powered by{" "}
+      <a href="https://zerops.io" class="link" target="_blank"> Zerops </a>
     </p>
   </div>
 
@@ -60,6 +76,22 @@ import Steps from "../components/Steps.astro";
       line-height: 1.6;
       justify-self: center;
     }
+
+    .deploybutton {
+      background-color: #00b1a3;
+      padding-left: 7.25rem;
+      padding-right: 7.25rem;
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
+      font-weight: 600;
+      color: #292929;
+      transition: 300ms;
+    }
+
+    .deploybutton:hover {
+      background-color: #3cbdb2;
+    }
+
     .astro-a {
       position: absolute;
       top: -32px;
@@ -83,7 +115,7 @@ import Steps from "../components/Steps.astro";
       margin-bottom: 0.5em;
     }
     .text-gradient {
-      background-image: linear-gradient(to right, #f7e9ff 0%, #b3a3ff 20%);
+      background-image: linear-gradient(to right, #f7e9ff 0%, #7e7b8f 20%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-size: 400%;
@@ -96,35 +128,6 @@ import Steps from "../components/Steps.astro";
       padding: 0;
     }
 
-    .primarybutton {
-      background-color: #25292e;
-      padding-left: 1.5rem;
-      padding-right: 1.5rem;
-      padding-top: 0.75rem;
-      padding-bottom: 0.75rem;
-      font-weight: 500;
-      color: #f7e9ff;
-      transition: 0.1s;
-    }
-
-    .primarybutton:hover {
-      background-color: #22262b;
-    }
-
-    .secondarybutton {
-      background-color: #989ca1;
-      padding-left: 1.5rem;
-      padding-right: 1.5rem;
-      padding-top: 0.75rem;
-      padding-bottom: 0.75rem;
-      font-weight: 500;
-      color: #25292e;
-      transition: 0.1s;
-    }
-
-    .secondarybutton:hover {
-      background-color: #8d939b;
-    }
     .header {
       padding: 1rem;
       width: 800px;
@@ -134,18 +137,5 @@ import Steps from "../components/Steps.astro";
       line-height: 1.6;
       justify-self: center;
     }
-
-    /* .header::before {
-      position: absolute;
-      z-index: -1;
-      content: "";
-      top: 0%;
-      bottom: 10%;
-      width: 150%;
-      left: -25%;
-      background: linear-gradient(83.21deg, #3245ff 0%, #bc52ee 100%);
-      -webkit-mask-image: radial-gradient(rgba(0, 0, 0, 0.45), transparent 70%);
-      mask-image: radial-gradient(rgba(0, 0, 0, 0.45), transparent 70%);
-    } */
   </style>
 </Layout>
