@@ -28,9 +28,7 @@ This recipe is for production as is and will scale horizontally in case of high 
 <br/>
 
 ## Changes made over the default installation
-If you want to modify your own app running Astro to efficiently run on Zerops, these are the general steps we took:
-
-- Add [zerops.yml](https://github.com/zeropsio/recipe-astro-static/blob/main/zerops.yml) to your repository
+No changes needed, just add [zerops.yml](https://github.com/zeropsio/recipe-astro-static/blob/main/zerops.yml) to your repository.
 
 <br/>
 <br/>
