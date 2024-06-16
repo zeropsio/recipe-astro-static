@@ -1,4 +1,4 @@
-# Zerops x Astro - Node.js
+# Zerops x Astro - Static
 
 ![astro](https://github.com/zeropsio/recipe-shared-assets/blob/main/covers/cover-astro.png)
 
