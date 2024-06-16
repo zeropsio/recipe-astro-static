@@ -5,6 +5,6 @@ project:
 
 services:
   - hostname: app
-    type: static@1.0
+    type: static
     enableSubdomainAccess: true
     buildFromGit: https://github.com/zeropsio/recipe-astro-static
