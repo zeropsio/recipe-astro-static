@@ -5,5 +5,5 @@ import expressiveCode from "astro-expressive-code";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), expressiveCode()]
+  integrations: [tailwind(), expressiveCode({themes:'github-dark'})],
 });
