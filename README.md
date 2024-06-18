@@ -28,7 +28,7 @@ This recipe is ready for production as is, and will scale vertically by adding m
 <br/>
 
 ## Changes made over the default installation
-No changes needed, just add [zerops.yml](https://github.com/zeropsio/recipe-astro-static/blob/main/zerops.yml) to your repository.
+If you want to modify your existing Astro Static site to efficiently run on Zerops, there are no changes needed in the codebase on top of the standard installation, just add [zerops.yml](https://github.com/zeropsio/recipe-astro-static/blob/main/zerops.yml) to your repository.
 
 <br/>
 <br/>
