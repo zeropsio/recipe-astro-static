@@ -18,7 +18,7 @@ You can either click the deploy button to deploy directly on Zerops, or manually
 <br/>
 
 ## Recipe features
-- Static version of **Astro 4.1** running on a **Zerops Static** service.
+Static version of **Astro 4.1** running on a **Zerops Static** service.
 
 <br/>
 
