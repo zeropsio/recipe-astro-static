@@ -17,17 +17,17 @@ You can either click the deploy button to deploy directly on Zerops, or manually
 <br/>
 
 ## Recipe features
-- Static version of **Astro 4.1** running on a **Zerops Static** service.
+Static version of **Astro 4.1** running on a **Zerops Static** service.
 
 <br/>
 
 ## Production vs. development
-This recipe is for production as is, and will scale horizontally in case of high traffic surges. If you want to achieve the highest baseline reliability and resiliace, start with at least two containers (add `minContainers: 2` in recipe YAML in the `app` service section, or change the minimum containers in "Automatic Scaling configuration" section of service detail).
+This recipe is ready for production as is, and will scale horizontally by adding more containers in case of high traffic surges. If you want to achieve the highest baseline reliability and resiliace, start with at least two containers (add `minContainers: 2` in recipe YAML in the `app` service section, or change the minimum containers in "Automatic Scaling configuration" section of service detail).
 
 <br/>
 
 ## Changes made over the default installation
-No changes needed, just add [zerops.yml](https://github.com/zeropsio/recipe-astro-static/blob/main/zerops.yml) to your repository.
+If you want to modify your existing Astro Static site to efficiently run on Zerops, there are no changes needed in the codebase on top of the standard installation, just add [zerops.yml](https://github.com/zeropsio/recipe-astro-static/blob/main/zerops.yml) to your repository.
 
 <br/>
 <br/>
