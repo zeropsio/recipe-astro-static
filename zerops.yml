@@ -7,9 +7,6 @@ zerops:
         - pnpm build
       deployFiles:
         - dist/~
-      cache:
-        - node_modules
-        - pnpm-lock.yaml
     run:
       base: static
       
